@@ -1,0 +1,65 @@
+{
+    "quizzes": [
+        {
+            "question": "[파이썬] 문자열을 정수로 변환하는 함수는?",
+            "choices": [
+                "str()",
+                "int()",
+                "list()",
+                "bool()"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "[파이썬] 조건이 참인 동안 반복하는 문법은?",
+            "choices": [
+                "if",
+                "def",
+                "while",
+                "class"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "[Git] 새로운 로컬 Git 저장소를 초기화하는 명령어는?",
+            "choices": [
+                "git init",
+                "git push",
+                "git pull",
+                "git log"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "[Git] 스테이징된 변경 사항을 기록하는 명령어는?",
+            "choices": [
+                "git clone",
+                "git status",
+                "git checkout",
+                "git commit"
+            ],
+            "answer": 4
+        },
+        {
+            "question": "[Docker] 실행 중인 컨테이너 목록을 확인하는 명령어는?",
+            "choices": [
+                "docker build",
+                "docker run",
+                "docker ps",
+                "docker stop"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "[Docker] 이미지를 기반으로 새 컨테이너를 생성하고 실행하는 명령어는?",
+            "choices": [
+                "docker images",
+                "docker run",
+                "docker logs",
+                "docker rm"
+            ],
+            "answer": 2
+        }
+    ],
+    "best_score": 83
+}
