@@ -50,7 +50,7 @@ python quiz.py
 ![alt text](image-4.png)
 
 ### 커밋 및 브랜치 로그
-<!-- ![실행 화면](image-6.png) -->
+![alt text](image-7.png)
 
 ---
 
