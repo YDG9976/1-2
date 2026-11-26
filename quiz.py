@@ -192,12 +192,15 @@ class QuizGame:
             print("등록된 퀴즈가 없습니다. 퀴즈를 먼저 추가해주세요.")
             return
 
-        print(f"\n📝 퀴즈를 시작합니다! (총 {len(self.quizzes)}문제)")
+        question_count = self.prompt_int(
+            "풀고 싶은 문제 수를 입력하세요: ", 1, len(self.quizzes)
+        )
+        print(f"\n📝 퀴즈를 시작합니다! (총 {question_count}문제)")
         correct_count = 0
-
         # 저장된 목록은 건드리지 않고 복사한 목록만 섞기
         questions = self.quizzes.copy()
         random.shuffle(questions)
+        questions = questions[:question_count]
 
         for idx, quiz in enumerate(questions, start=1):
             print("-" * 40)
@@ -211,7 +214,7 @@ class QuizGame:
                 print(f"❌ 오답입니다. 정답: {quiz.answer}번 - {quiz.choices[quiz.answer - 1]}")
 
         # 맞힌 비율을 100점 기준으로 계산
-        total_questions = len(self.quizzes)
+        total_questions = len(questions)
         score = int((correct_count / total_questions) * 100)
 
         print("\n" + "=" * 40)
