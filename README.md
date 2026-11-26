@@ -104,7 +104,7 @@ quiz-project/
 {
     "quizzes": [
         {
-            "question": "[파이썬] 문자열을 정수로 변환하는 함수는??",
+            "question": "[파이썬] 문자열을 정수로 변환하는 함수는?",
             "choices": [
                 "str()",
                 "int()",
